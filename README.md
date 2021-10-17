@@ -258,6 +258,11 @@ sudo systemctl enable munge
 sudo systemctl start munge
 ```
 
+### Create munge key
+```
+/usr/sbin/create-munge-key
+```
+
 Test munge if you like:
 `munge -n | unmunge | grep STATUS`
 
