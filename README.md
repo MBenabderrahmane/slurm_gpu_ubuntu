@@ -299,10 +299,11 @@ sudo apt-get install git gcc make ruby ruby-dev libpam0g-dev libmariadb-client-l
 sudo gem install fpm
 ```
 
-Next we set up MariaDB for storing SLURM data:
+Next we set up MariaDB for storing SLURM data (start first then enable), enable fails use mariadb.service
 ```
-sudo systemctl enable mysql
 sudo systemctl start mysql
+sudo systemctl enable mysql
+#sudo systemctl enable mariadb.service
 sudo mysql -u root
 ```
 
